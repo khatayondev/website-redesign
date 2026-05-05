@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TUC Designs LLC</title>
+  <meta name="description" content="Get in touch with TUC Designs LLC for your custom website, professional email setup, and branding needs.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="mouse-tracer" id="mouseTracer"></div>
+  <div class="custom-cursor" id="customCursor"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><span>TUC</span> Designs</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch Theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <a href="contact.html" class="nav-cta">Get started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero hero-sub" id="contact-hero">
+    <div class="grid-overlay"></div>
+    <div class="hero-blobs">
+      <div class="blob blob-1" style="background: radial-gradient(circle, rgba(74,222,128,0.2), transparent);"></div>
+      <div class="blob blob-2" style="background: radial-gradient(circle, rgba(163,230,53,0.15), transparent);"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="reveal">
+          <div class="section-label">Get In Touch</div>
+          <h1 id="heroHeadline" style="margin-bottom: 20px;">Let's Build Something Meaningful Together.</h1>
+          <p class="hero-desc">Ready to elevate your online presence? Fill out the form below or reach out to us directly. We'd love to hear about your project and see how we can help.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section" style="padding-top: 40px; padding-bottom: 120px;">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal">
+          <h2 style="font-size: 2rem; margin-bottom: 16px;">Contact Information</h2>
+          <p style="color:var(--text-muted); line-height: 1.7;">Whether you have a question, want to start a project, or just want to say hi, we'll try our best to get back to you within 24 hours.</p>
+          
+          <div class="contact-info-list">
+            <div class="contact-info-item">
+              <div class="icon">📧</div>
+              <div>
+                <h4>Email Us</h4>
+                <p><a href="mailto:info@tucdesigns.com">info@tucdesigns.com</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <div class="icon">📞</div>
+              <div>
+                <h4>Call Us</h4>
+                <p><a href="tel:+14243128525">+1 424-312-8525</a></p>
+              </div>
+            </div>
+            
+            <div class="contact-info-item">
+              <div class="icon">📍</div>
+              <div>
+                <h4>Location</h4>
+                <p>Available worldwide.<br>Based in the United States.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal">
+          <form onsubmit="event.preventDefault(); alert('Message sent successfully! (This is a demo form)'); this.reset();">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="service">Service Interested In</label>
+              <select id="service" class="form-control" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="web-design">Web Design</option>
+                <option value="email-setup">Email Setup</option>
+                <option value="branding">Logo &amp; Branding</option>
+                <option value="marketing">Digital Marketing</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Project Details</label>
+              <textarea id="message" class="form-control" placeholder="Tell us about your project, goals, and timeline..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 16px; background: var(--accent); color: #000;">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span>TUC</span> Designs</a>
+          <p>Crafting tailored websites, professional email setups, and memorable logos to help your business stand out online.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@tucdesigns.com">info@tucdesigns.com</a></li>
+            <li><a href="tel:+14243128525">+1 424-312-8525</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025. All rights reserved. The Uplift Chronicles / TUC Designs LLC.</p>
+        <p>Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

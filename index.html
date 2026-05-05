@@ -1,81 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Redesign</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TUC Designs LLC – Custom Websites &amp; Branding</title>
+  <meta name="description" content="TUC Designs LLC crafts tailored websites, professional email setups, and memorable logos to help your business stand out online.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="container">
-                <div class="logo">Website Redesign</div>
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <div class="mouse-tracer" id="mouseTracer"></div>
+  <div class="custom-cursor" id="customCursor"></div>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="container">
-                <h1>Welcome to Your Website</h1>
-                <p>Build something amazing with static HTML, CSS, and JavaScript</p>
-                <button class="cta-button">Get Started</button>
-            </div>
-        </section>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="index.html" class="logo"><span>TUC</span> Designs</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Switch Theme">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <a href="contact.html" class="nav-cta">Get started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>This is a static website template ready for customization. Add your content, style, and functionality here.</p>
-            </div>
-        </section>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="grid-overlay"></div>
+    <div class="hero-blobs">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+    </div>
+    
+    <!-- Floating Tools -->
+    <div class="floating-tool tool-1">🎨</div>
+    <div class="floating-tool tool-2">💻</div>
+    <div class="floating-tool tool-3">🛠️</div>
+    <div class="floating-tool tool-4">🚀</div>
 
-        <section id="services" class="services">
-            <div class="container">
-                <h2>Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <h3>Service One</h3>
-                        <p>Description of your first service</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Service Two</h3>
-                        <p>Description of your second service</p>
-                    </div>
-                    <div class="service-card">
-                        <h3>Service Three</h3>
-                        <p>Description of your third service</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required>
-                    <input type="email" placeholder="Your Email" required>
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="cta-button">Send Message</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Website Redesign. All rights reserved.</p>
+    <div class="container">
+      <div class="hero-content">
+        <div class="reveal">
+          <h1 id="heroHeadline" style="margin-bottom: 20px;">Bringing Your Dream Into Reality.</h1>
+          <p class="hero-desc">We increase revenue and ensure sustainable long-term growth for your business through powerful, custom-designed digital experiences.</p>
+          <div class="hero-buttons">
+            <a href="contact.html" class="btn-primary" style="background: var(--accent); color: #000; padding: 18px 40px;">Book A Meeting</a>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- Brand Bar -->
+  <section class="brand-bar reveal">
+    <div class="container">
+      <div class="brand-bar-label">Trusted by amazing brands</div>
+      <div class="brand-grid">
+        <div class="brand-item">Layers</div>
+        <div class="brand-item">Quotient</div>
+        <div class="brand-item">Circoole</div>
+        <div class="brand-item">Hourglass</div>
+        <div class="brand-item">Command+R</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats-bar reveal">
+    <div class="container">
+      <div class="stat-item">
+        <div class="stat-num">50+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">30+</div>
+        <div class="stat-label">Happy Clients</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">100%</div>
+        <div class="stat-label">Satisfaction</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="section-label">How We Work</div>
+          <h2 class="about-title">Get a dedicated design team at a fraction of the cost.</h2>
+        </div>
+        <div class="about-right reveal">
+          <p>Grow your brand with high-quality design for a flat monthly fee. Work with senior designers. Subscribe and make as many requests as you need — no limits.</p>
+          <a href="contact.html" class="btn-primary" style="background: var(--accent); color: #000;">See Pricing</a>
+        </div>
+      </div>
+      
+      <!-- Process Steps -->
+      <div class="process-grid">
+        <div class="process-step reveal">
+          <div class="process-icon">🚀</div>
+          <h3>Subscribe & get started</h3>
+          <p>Submit as many design tasks as you need without worrying about individual project fees.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-icon">🎨</div>
+          <h3>Polished designs - on time</h3>
+          <p>Our designers get to work to deliver your request. Receive your design within a few days.</p>
+        </div>
+        <div class="process-step reveal">
+          <div class="process-icon">🔄</div>
+          <h3>Revisions made simple</h3>
+          <p>Custom designs, prompt replies, and as many revisions as you need until it's perfect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="services-section">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <div class="section-label">Our Services</div>
+        <h2 style="font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px;">Everything Your Brand Needs</h2>
+        <p style="color:var(--text-muted);max-width:500px;margin:16px auto 0;font-size:0.95rem;line-height:1.7;">Crafting websites, logos, and professional email setups tailored for your business.</p>
+      </div>
+      <div class="services-grid">
+        <div class="svc-card reveal">
+          <div class="svc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+          </div>
+          <h3>Web Design</h3>
+          <p>Custom websites built to showcase your business with style, clarity, and ease of use.</p>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          </div>
+          <h3>Email Setup</h3>
+          <p>Professional email accounts to keep your communication seamless and on-brand.</p>
+        </div>
+        <div class="svc-card reveal">
+          <div class="svc-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+          </div>
+          <h3>Logo &amp; Branding</h3>
+          <p>Distinctive logos and brand identities that tell your story and make you memorable.</p>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;" class="reveal">
+        <a href="services.html" class="btn-outline">View All Services <span class="arrow-circle"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Preview -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <div class="section-label">Testimonials</div>
+        <h2 style="font-size:clamp(2rem,4vw,3rem);letter-spacing:-1.5px;">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="test-card reveal">
+          <div class="test-stars">★★★★★</div>
+          <blockquote>"They transformed our brand with a stunning logo and exceptional website design services."</blockquote>
+          <div class="test-author">
+            <div class="test-avatar">EG</div>
+            <div class="test-author-info"><h4>Dr. Eunice G.</h4><span>Business Owner</span></div>
+          </div>
+        </div>
+        <div class="test-card reveal">
+          <div class="test-stars">★★★★★</div>
+          <blockquote>"TUC Designs — they are swift, reliable and easy to work with. The end results was exactly what I was looking for."</blockquote>
+          <div class="test-author">
+            <div class="test-avatar">AC</div>
+            <div class="test-author-info"><h4>Agi Chu</h4><span>Owner, Pump Foods LLC</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="cta-banner reveal">
+    <div class="container">
+      <div class="cta-banner-inner">
+        <div class="cta-banner-content">
+          <h2>Ready to Bring Your <span class="accent">Vision</span> to Life?</h2>
+          <p>Let's discuss your project. We'd love to hear from you and help your business grow online.</p>
+        </div>
+        <div class="cta-banner-actions">
+          <a href="contact.html" class="btn-primary">Contact Us →</a>
+          <a href="portfolio.html" class="btn-text">See Our Work <span class="arrow">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><span>TUC</span> Designs</a>
+          <p>Crafting tailored websites, professional email setups, and memorable logos to help your business stand out online.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Twitter">𝕏</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="LinkedIn">in</a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:info@tucdesigns.com">info@tucdesigns.com</a></li>
+            <li><a href="tel:+14243128525">+1 424-312-8525</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025. All rights reserved. The Uplift Chronicles / TUC Designs LLC.</p>
+        <p>Crafted with care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
