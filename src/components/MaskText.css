@@ -1,0 +1,20 @@
+.mask-text-wrapper {
+  display: inline-block;
+}
+
+.mask-word-container {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+}
+
+.mask-word {
+  display: inline-block;
+  transform: translateY(110%);
+  animation: maskReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes maskReveal {
+  0% { transform: translateY(110%); }
+  100% { transform: translateY(0); }
+}
